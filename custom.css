@@ -1,0 +1,195 @@
+html, body {
+
+}
+
+section {
+	position: relative;
+	z-index: 1;
+	min-height: 75vh;
+	padding-top: 20%;
+	padding-bottom: 20%;
+}
+
+footer {
+	position: relative;
+	z-index: 1;
+	background-color: #51626f;
+}
+
+.container {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.fixed {
+	position: fixed;
+}
+
+.jumbotron {
+	height: 95vh;
+	background: url("assets/IEEE_Cover.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#header {
+	z-index: 0;
+	right: 5%;
+	text-align: center;
+}
+
+#header h1, #header h2 {
+	color: white;
+}
+
+section h3 {
+	text-align: center;
+}
+
+#what-we-do, #events {
+	background-color: #aaa;
+}
+
+
+#members .container {
+	text-align: center;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+#members .row {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#members .row img {
+	height:8em;
+	border-radius: 50%;
+}
+
+/* Hamburger Menu */
+#menu {
+  color: #f28200;
+  position: fixed;
+  z-index: 99;
+  top: 10px;
+  left: 10px;
+}
+
+#menu ul {
+	margin-left: 0;
+	padding-left: 10px;
+}
+
+#menu li {
+	margin-left:0;
+  	padding-bottom: 10px;
+  	list-style: none;
+  	text-decoration: none;
+}
+
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  background: none;
+}
+
+.c-hamburger:focus {
+  outline: none;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 9px;
+  right: 9px;
+  height: 4px;
+  background: #f28200;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #f28200;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -10px;
+}
+
+.c-hamburger span::after {
+  bottom: -10px;
+}
+
+.c-hamburger--htx {
+  /*background-color: #003f5d;*/
+}
+
+.c-hamburger--htx span {
+  transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+  /*background-color: #cb0032;*/
+}
+
+.c-hamburger--htx.is-active span {
+  background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+  background-color: #fff;
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+  background-color: #fff;
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  transition-delay: 0s, 0.3s;
+}
