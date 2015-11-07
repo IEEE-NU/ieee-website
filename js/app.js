@@ -1,4 +1,4 @@
-var ieeeApp = angular.module('ieeeApp', ['angular-scroll-animate']);
+var ieeeApp = angular.module('ieeeApp', []);
 
 ieeeApp.controller('HomeCtrl', function($scope) {
 	$scope.test = 'This is a test.';
@@ -7,12 +7,6 @@ ieeeApp.controller('HomeCtrl', function($scope) {
 
 	$scope.toggleMenu = function() {
 		$scope.menuOpen = !$scope.menuOpen;
-	};
-
-	//Animation
-	$scope.animateElementIn = function($el) {
-		$el.removeClass('hidden');
-  		$el.addClass('animated fadeIn'); // this example leverages animate.css classes 
 	};
 
 	$scope.exec = [
