@@ -1,3 +1,12 @@
+.jumbotron {
+  height: 95vh;
+  background: url("assets/backgrounds/IEEE_Ford.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 section {
 	position: relative;
 	z-index: 1;
@@ -6,10 +15,14 @@ section {
 	padding-bottom: 20%;
 }
 
+section h3 {
+  text-align: center;
+}
+
 footer {
 	position: relative;
 	z-index: 1;
-	background-color: #51626f;
+	background-color: #003f5d;
 }
 
 .container {
@@ -25,15 +38,6 @@ footer {
 	position: fixed;
 }
 
-.jumbotron {
-	height: 95vh;
-	background: url("assets/IEEE_Cover.jpg") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
 #header {
 	z-index: 0;
 	right: 5%;
@@ -44,14 +48,14 @@ footer {
 	color: white;
 }
 
-section h3 {
-	text-align: center;
+#what-we-do {
+	background-color: #07abfb;
 }
 
-#what-we-do, #events {
-	background-color: #aaa;
+#events {
+  background-color: #00537b;
+  color:white;
 }
-
 
 #members .container {
 	text-align: center;
@@ -69,7 +73,9 @@ section h3 {
 	border-radius: 50%;
 }
 
+/******************/
 /* Hamburger Menu */
+/******************/
 #menu {
   color: #f28200;
   position: fixed;
@@ -85,9 +91,8 @@ section h3 {
 
 #menu li {
 	margin-left:0;
-  	padding-bottom: 10px;
-  	list-style: none;
-  	text-decoration: none;
+  padding-bottom: 10px;
+  list-style: none;
 }
 
 .c-hamburger {
@@ -176,13 +181,13 @@ section h3 {
 .c-hamburger--htx.is-active span::before {
   top: 0;
   transform: rotate(45deg);
-  background-color: #fff;
+  background-color: #c36900;
 }
 
 .c-hamburger--htx.is-active span::after {
   bottom: 0;
   transform: rotate(-45deg);
-  background-color: #fff;
+  background-color: #c36900;
 }
 
 .c-hamburger--htx.is-active span::before,

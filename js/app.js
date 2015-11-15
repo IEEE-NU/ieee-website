@@ -1,4 +1,4 @@
-var ieeeApp = angular.module('ieeeApp', []);
+var ieeeApp = angular.module('ieeeApp', ['duScroll']);
 
 ieeeApp.controller('HomeCtrl', function($scope) {
 	$scope.test = 'This is a test.';
@@ -13,65 +13,65 @@ ieeeApp.controller('HomeCtrl', function($scope) {
 		{
 			name: 'William Xiao',
 			position: 'Supreme Overlord',
-			img: 'assets/William.jpg'
+			img: 'assets/headshots/William.jpg'
 		},
 
 		{
 			name: 'Kushal Gourikrishna',
 			position: 'Co-President',
-			img: 'assets/Yeezy.jpg'
+			img: 'assets/headshots/Yeezy.jpg'
 		},
 
 		{
 			name: 'Adam He',
 			position: 'Co-President',
-			img: 'assets/Yeezy.jpg'
+			img: 'assets/headshots/Yeezy.jpg'
 		},
 
 		{
 			name: 'Curtis Wang',
 			position: 'Wise Old Man',
-			img: 'assets/Chris.jpg'
+			img: 'assets/headshots/Yeezy.jpg'
 		},
 
 		{
 			name: 'Kevin Chen',
-			img: 'assets/Yeezy.jpg'
+			img: 'assets/headshots/Yeezy.jpg'
 		},
 
 		{
 			name: 'Kapil Garg',
-			img: 'assets/Yeezy.jpg'
+			img: 'assets/headshots/Yeezy.jpg'
 		},
 
 		{
 			name: 'Bryanna Yeh',
-			img: 'assets/Yeezy.jpg'
+			img: 'assets/headshots/Yeezy.jpg'
 		},
 
 		{
 			name: 'Chris Chen',
-			img: 'assets/Chris.jpg'
+			img: 'assets/headshots/Chris.jpg'
 		},
 
 		{
 			name: 'Kevin Wilde',
-			img: 'assets/Kevin.jpg'
+			img: 'assets/headshots/Kevin.jpg'
 		},
 
 		{
 			name: 'Holliday Schuler',
-			img: 'assets/Yeezy.jpg'
+			img: 'assets/headshots/Yeezy.jpg'
 		},
 
 		{
 			name: 'Ricardo Rivas',
-			img: 'assets/Yeezy.jpg'
+			img: 'assets/headshots/Yeezy.jpg'
 		},
 
 		{
 			name: 'Larry Zhao',
-			img: 'assets/Yeezy.jpg'
+			img: 'assets/headshots/Yeezy.jpg'
 		}
 	];
 });
