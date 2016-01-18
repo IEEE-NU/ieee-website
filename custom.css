@@ -1,6 +1,10 @@
 .jumbotron {
   height: 95vh;
-  background: url("assets/backgrounds/IEEE_Ford.jpg") no-repeat center center fixed;
+  background: linear-gradient( to right,
+    rgba(0, 25, 150, 0.7),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 25, 150, 0.7)    
+    ), url("assets/backgrounds/IEEE_Ford.jpg") no-repeat center center fixed; /* Check cross-browser compatibility of linear gradient */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
