@@ -16,11 +16,22 @@ section {
 }
 
 section h3 {
-  text-align: center;
+	text-align: center;
 }
 
-footer {
+html {
 	position: relative;
+	min-height: 100%;
+}
+body {
+	margin: 0 0 60px; /* bottom = footer height */
+}
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 60px;
+	width: 100%;
 	z-index: 1;
 	background-color: #003f5d;
 }

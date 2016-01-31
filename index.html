@@ -11,112 +11,119 @@
 	</head>
 
 	<body ng-controller="HomeCtrl">
-		<div id="menu">
-			<button ng-click="toggleMenu()" class="c-hamburger c-hamburger--htx">
-				<span>toggle menu</span>
-			</button>
-			<nav>
-				<ul ng-show="menuOpen">
-					<li><a href="#about" du-smooth-scroll>About Us</a></li>
-					<li><a href="#what-we-do" du-smooth-scroll>What We Do</a></li>
-					<li><a href="#AE" du-smooth-scroll>Associate Executive Program</a></li>
-					<li><a href="#events" du-smooth-scroll>Events</a></li>
-					<li><a href="#members" du-smooth-scroll>Executive Board</a></li>
-				</ul>
-			</nav>
-		</div>
+            <div id="menu">
+                <button ng-click="toggleMenu()" class="c-hamburger c-hamburger--htx">
+                    <span>toggle menu</span>
+                </button>
+                <nav>
+                    <ul ng-show="menuOpen">
+                        <li><a href="#about" du-smooth-scroll>About Us</a></li>
+                        <li><a href="#what-we-do" du-smooth-scroll>What We Do</a></li>
+                        <li><a href="#AE" du-smooth-scroll>Associate Executive Program</a></li>
+                        <li><a href="#events" du-smooth-scroll>Events</a></li>
+                        <li><a href="#members" du-smooth-scroll>Executive Board</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-		<div class="jumbotron">
-			<div id="header" class="fixed">
-				<h1>IEEE</h1>
-				<h2>Northwestern University</h2>
-			</div>
-		</div>
+            <div class="jumbotron">
+                <div id="header" class="fixed">
+                    <h1>IEEE</h1>
+                    <h2>Northwestern University</h2>
+                </div>
+            </div>
 
-		<section id="about">
-			<div class="container">
-				<h3>About Us</h3>
-				<p class="">
-					The Northwestern University Student Chapter of the Institute of Electrical and Electronics Engineers is an organization dedicated to providing the resources and outlets through which the University's aspiring engineers, tinkerers, and hackers can learn and create with their craft.
-				</p>
-				<p>
-				
-					Adam He is soft. Chris is softerer.
-                    test
-				</p>
-			</div>
-		</section>
+            <section id="about">
+                <div class="container">
+                    <h3>About Us</h3>
+                    <p class="">
+                        The Northwestern University Student Chapter of the Institute of Electrical and Electronics Engineers is an organization dedicated to providing the resources and outlets through which the University's aspiring engineers, tinkerers, and hackers can learn and create with their craft.
+                    </p>
+                    <p>
 
-		<section id="what-we-do">
-			<div class="container">
-				<h3>What We Do</h3>
-				<div class="row">
-					<div class="col-md-4">
-						<h4>Educate</h4>
-						<p>
-							We have an AE Program and provide advising on EECS classes before registration each quarter.
-						</p>
-					</div>
-					<div class="col-md-4">
-						<h4>Expose</h4>
-						<p>
-							We host companies on campus to give tech talks.
-						</p>
-					</div>
-					<div class="col-md-4">
-						<h4>Enjoy</h4>
-						<p>
-							We host EECS-related events, such as the much-anticipated EECS Olympics and always-popular EECS Barbeque.  We also take a quarterly trip to Yeowoosai.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+                        Adam He is soft. Chris is softerer.
+                        test
+                    </p>
+                </div>
+            </section>
 
-		<section id="AE">
-			<div class="container">
-				<h3>Associate Executive Program</h3>
-			</div>
-		</section>
+            <section id="what-we-do">
+                <div class="container">
+                    <h3>What We Do</h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Educate</h4>
+                            <p>
+                                We have an AE Program and provide advising on EECS classes before registration each quarter.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Expose</h4>
+                            <p>
+                                We host companies on campus to give tech talks.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Enjoy</h4>
+                            <p>
+                                We host EECS-related events, such as the much-anticipated EECS Olympics and always-popular EECS Barbeque.  We also take a quarterly trip to Yeowoosai.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-		<section id="events">
-			<div class="container">
-				<h3>Events</h3>
-			</div>
-		</section>
+            <section id="AE">
+                <div class="container">
+                    <h3>Associate Executive Program</h3>
+                </div>
+            </section>
 
-		<section id="members">
-			<div class="container">
-				<h3>Executive Board</h3>
-				<div ng-repeat="member in exec" ng-if="$index % 4 == 0" class="row">
-					<div class="col-md-3">
-						<img ng-src="{{exec[$index].img}}">
-						<h4>{{exec[$index].name}}</h4>
-						<p>{{exec[$index].position}}</p>
-					</div>
-					<div class="col-md-3">
-						<img ng-src="{{exec[$index + 1].img}}">
-						<h4>{{exec[$index + 1].name}}</h4>
-						<p>{{exec[$index + 1].position}}</p>
-					</div>
-					<div class="col-md-3">
-						<img ng-src="{{exec[$index + 2].img}}">
-						<h4>{{exec[$index + 2].name}}</h4>
-						<p>{{exec[$index + 2].position}}</p>
-					</div>
-					<div class="col-md-3">
-						<img ng-src="{{exec[$index + 3].img}}">
-						<h4>{{exec[$index + 3].name}}</h4>
-						<p>{{exec[$index + 3].position}}</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		
+            <section id="events">
+                <div class="container">
+                    <h3>Events</h3>
+                </div>
+            </section>
+
+            <section id="members">
+                <div class="container">
+                    <h3>Executive Board</h3>
+                    <div ng-repeat="member in exec" ng-if="$index % 4 == 0" class="row">
+                        <div class="col-md-3">
+                            <img ng-src="{{exec[$index].img}}">
+                            <h4>{{exec[$index].name}}</h4>
+                            <p>{{exec[$index].position}}</p>
+                        </div>
+                        <div class="col-md-3">
+                            <img ng-src="{{exec[$index + 1].img}}">
+                            <h4>{{exec[$index + 1].name}}</h4>
+                            <p>{{exec[$index + 1].position}}</p>
+                        </div>
+                        <div class="col-md-3">
+                            <img ng-src="{{exec[$index + 2].img}}">
+                            <h4>{{exec[$index + 2].name}}</h4>
+                            <p>{{exec[$index + 2].position}}</p>
+                        </div>
+                        <div class="col-md-3">
+                            <img ng-src="{{exec[$index + 3].img}}">
+                            <h4>{{exec[$index + 3].name}}</h4>
+                            <p>{{exec[$index + 3].position}}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
 		<footer>
-			<a href="http://facebook.com/groups/ieee.nu">
-				FB
-			</a>
+            <p style="text-align:center;">
+                <a href="http://facebook.com/groups/ieee.nu">
+                    <img height="50" width="50" src="http://www.iconsdb.com/icons/preview/white/facebook-3-xxl.png" />
+                </a>
+                <a href="https://www.ieee.org/index.html">
+                    <img height="50" width="50" src="https://www.cs.uic.edu/pub/IEEE/WebLeftBar/IEEE_Logo_150x150.png" />
+                </a>
+                <img height="50" width="50" src="http://www.iconarchive.com/download/i63340/cornmanthe3rd/plex/Communication-gmail.ico" />
+            </p>
 		</footer>
 		
 		<script src="vendor/angular/angular.js"></script>
