@@ -1,3 +1,7 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .jumbotron {
   height: 95vh;
   background: url("assets/backgrounds/IEEE_Ford.jpg") no-repeat center center fixed;
@@ -5,6 +9,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-bottom:0px;
 }
 
 section {
@@ -46,6 +51,10 @@ footer {
 
 #header h1, #header h2 {
 	color: white;
+}
+
+#about {
+  background-color: #B8B8B8;
 }
 
 #what-we-do {

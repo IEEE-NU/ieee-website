@@ -19,34 +19,34 @@ ieeeApp.controller('HomeCtrl', function($scope) {
 		{
 			name: 'Kushal Gourikrishna',
 			position: 'Co-President',
-			img: 'assets/headshots/Yeezy.jpg'
+			img: 'assets/headshots/Kush.jpg'
 		},
 
 		{
 			name: 'Adam He',
 			position: 'Co-President',
-			img: 'assets/headshots/Yeezy.jpg'
+			img: 'assets/headshots/Adam.jpg'
 		},
 
 		{
 			name: 'Curtis Wang',
 			position: 'Wise Old Man',
-			img: 'assets/headshots/Yeezy.jpg'
+			img: 'assets/headshots/Curtis.jpg'
 		},
 
 		{
 			name: 'Kevin Chen',
-			img: 'assets/headshots/Yeezy.jpg'
+			img: 'assets/headshots/Kevin_Chen.jpg'
 		},
 
 		{
 			name: 'Kapil Garg',
-			img: 'assets/headshots/Yeezy.jpg'
+			img: 'assets/headshots/Kapil.jpg'
 		},
 
 		{
 			name: 'Bryanna Yeh',
-			img: 'assets/headshots/Yeezy.jpg'
+			img: 'assets/headshots/Bryanna.jpg'
 		},
 
 		{
@@ -56,17 +56,17 @@ ieeeApp.controller('HomeCtrl', function($scope) {
 
 		{
 			name: 'Kevin Wilde',
-			img: 'assets/headshots/Kevin.jpg'
+			img: 'assets/headshots/Kevin_Wilde.jpg'
 		},
 
 		{
 			name: 'Holliday Schuler',
-			img: 'assets/headshots/Yeezy.jpg'
+			img: 'assets/headshots/Holliday.jpg'
 		},
 
 		{
 			name: 'Ricardo Rivas',
-			img: 'assets/headshots/Yeezy.jpg'
+			img: 'assets/headshots/Ricardo.jpg'
 		},
 
 		{
