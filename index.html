@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html lang="en" ng-app="ieeeApp">
 	<head>
-		<link href='https://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:500,300' rel='stylesheet' type='text/css'>
 		<title>IEEE Northwestern</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +17,10 @@
 				<span>toggle menu</span>
 			</button>
 			<nav>
-				<ul ng-show="menuOpen">
+				<ul ng-show="menuOpen" class="fade">
 					<li><a href="#about" du-smooth-scroll>About Us</a></li>
 					<li><a href="#what-we-do" du-smooth-scroll>What We Do</a></li>
-					<li><a href="#AE" du-smooth-scroll>Associate Executive Program</a></li>
+					<li><a href="#AE" du-smooth-scroll>AE Program</a></li>
 					<li><a href="#events" du-smooth-scroll>Events</a></li>
 					<li><a href="#members" du-smooth-scroll>Executive Board</a></li>
 				</ul>
@@ -38,14 +38,7 @@
 			<div class="container">
 				<h3>About Us</h3>
 				<p>
-					The Northwestern University Student Chapter of the Institute of Electrical and Electronics Engineers is an organization dedicated to providing the resources and outlets through which the University's aspiring engineers, tinkerers, and hackers can learn and create with their craft.
-				</p>
-				<p>
-				
-					Adam He is soft. Chris is softerer.
-
-					Adam He is soft.
-					Chris likes the AE Website Team!
+					The Northwestern University Student Chapter of the Institute of Electrical and Electronics Engineers (NU IEEE) is an organization dedicated to providing the resources and outlets through which the University's aspiring engineers, tinkerers, and hackers can learn and create with their craft.
 				</p>
 			</div>
 		</section>
@@ -76,9 +69,10 @@
 			</div>
 		</section>
 
-		<section id="AE">
-			<div class="container">
+		<section >
+			<div class="container" id="AE">
 				<h3>Associate Executive Program</h3>
+				<p>For students who are interested in some crazy stuff.</p>
 			</div>
 		</section>
 
@@ -88,8 +82,8 @@
 			</div>
 		</section>
 
-		<section id="members">
-			<div class="container">
+		<section>
+			<div class="container" id="members">
 				<h3>Executive Board</h3>
 				<div ng-repeat="member in exec" ng-if="$index % 4 == 0" class="row">
 					<div class="col-md-3">
@@ -118,7 +112,7 @@
 		
 		<footer>
 			<a href="http://facebook.com/groups/ieee.nu">
-				FB
+				FACEBOOK
 			</a>
 		</footer>
 		

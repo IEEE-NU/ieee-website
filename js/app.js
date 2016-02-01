@@ -1,4 +1,4 @@
-var ieeeApp = angular.module('ieeeApp', ['duScroll']);
+var ieeeApp = angular.module('ieeeApp', ['duScroll', 'ngAnimate']);
 
 ieeeApp.controller('HomeCtrl', function($scope) {
 	$scope.test = 'This is a test.';
