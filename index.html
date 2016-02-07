@@ -69,8 +69,8 @@
 			</div>
 		</section>
 
-		<section >
-			<div class="container" id="AE">
+		<section id="AE">
+			<div class="container">
 				<h3>Associate Executive Program</h3>
 				<p>For students who are interested in some crazy stuff.</p>
 			</div>
@@ -82,8 +82,8 @@
 			</div>
 		</section>
 
-		<section>
-			<div class="container" id="members">
+		<section id="members">
+			<div class="container">
 				<h3>Executive Board</h3>
 				<div ng-repeat="member in exec" ng-if="$index % 4 == 0" class="row">
 					<div class="col-md-3">
@@ -107,6 +107,13 @@
 						<p>{{exec[$index + 3].position}}</p>
 					</div>
 				</div>
+				<!-- <div class="row">
+					<div class="col-md-3" ng-repeat="member in exec" style="margin-bottom: 100px;">
+						<img ng-src="{{member.img}}">
+						<h4>{{member.name}}</h4>
+						<p>{{member.position}}</p>
+					</div>
+				</div> -->
 			</div>
 		</section>
 		
