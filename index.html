@@ -27,12 +27,12 @@
 			</nav>
 		</div>
 
-		<div class="jumbotron">
-			<div id="header" class="fixed">
-				<h1>IEEE</h1>
-				<h2>Northwestern University</h2>
-			</div>
-		</div>
+        <div class="jumbotron">
+            <div id="header" class="fixed">
+                <h1>IEEE</h1>
+                <h2>Northwestern University</h2>
+            </div>
+        </div>
 
 		<section id="about">
 			<div class="container">
@@ -90,12 +90,6 @@
 						<p ng-if="event.description">{{event.description}}</p>
 					</div>
 				</div>
-
-				<!-- <h3>Events</h3> -->
-				<!-- <iframe src="https://calendar.google.com/calendar/embed?src=ieee%40u.northwestern.edu&ctz=America/Chicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
-
-				<!-- <ul id="events-upcoming"></ul> -->
-				<!-- <ul id="events-past"></ul> -->
 			</div>
 		</section>
 
@@ -139,9 +133,21 @@
 		</section>
 		
 		<footer>
-			<a href="http://facebook.com/groups/ieee.nu">
-				FACEBOOK
-			</a>
+                <span>
+                    <a href="http://facebook.com/groups/ieee.nu">
+                        <img height="40" width="40" src="http://i.imgur.com/UYqit2N.png" />
+                    </a>
+                </span>    
+                <span>  
+                    <a href="https://www.ieee.org/index.html">
+                        <img height="37" width="37" src="http://i.imgur.com/c1l2QlL.png" />
+                    </a>
+                </span>
+                <span>
+                    <a href="mailto:ieee@u.northwestern.edu">
+                        <img height="40" width="40" src="http://i.imgur.com/7mIHmFv.png" />
+                    </a>
+                </span>
 		</footer>
 		
 		<script src="vendor/angular/angular.js"></script>
@@ -149,11 +155,8 @@
 		<script src="vendor/angular-animate/angular-animate.js"></script>
 		<script src="vendor/angular-scroll/angular-scroll.js"></script>
 		<script src="vendor/jquery/jquery.js"></script>
-		<!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
-		<script src="vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/hamburger.js"></script>
-		<!-- <script src="js/format-google-calendar.js"></script> -->
-		<!-- <script src="js/eventfeed.js"></script> -->
 	</body>
 </html>
