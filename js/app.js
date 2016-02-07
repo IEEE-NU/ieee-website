@@ -1,13 +1,44 @@
 var ieeeApp = angular.module('ieeeApp', ['duScroll']);
 
-ieeeApp.controller('HomeCtrl', function($scope) {
-	$scope.test = 'This is a test.';
+ieeeApp.controller('HomeCtrl', function($scope, $http) {
 
 	$scope.menuOpen = false;
 
 	$scope.toggleMenu = function() {
 		$scope.menuOpen = !$scope.menuOpen;
 	};
+
+	$scope.events = [];
+
+	var today = new Date();
+	var timeMin = String(today.getFullYear() - 1) + '-' + String(today.getMonth()+1) + '-' + String(today.getDate()) + 'T00:00:00-06:00';
+	var url = 'https://www.googleapis.com/calendar/v3/calendars/ieee@u.northwestern.edu/events?key=AIzaSyDJ41XTLp-sCzITSfKSHkUS_PpCGhczOIU&singleEvents=true&orderBy=startTime&timeMin=' + timeMin;
+	$http.get(url).then(function successCallback(response) {
+	    for (var i = 0; i < response.data.items.length; i++) {
+
+	    	// Link to facebook event should be first thing in Google calendar description
+	    	var description = response.data.items[i].description;
+	    	if (description) {
+	    		var a = description.split();
+	    		for (var j = 0; j < a.length; j++) {
+	    			if (a[j].includes("facebook.com")) {
+	    				var fblink = a[j];
+	    				a.splice(j, 1); // Remove facebook link from description
+	    				break;
+	    			}
+	    		}
+		    	if (fblink) {
+		    		response.data.items[i].fblink = fblink;
+		    		response.data.items[i].description = a.join(' ');
+		    		fblink = "";
+		    	}
+	    	}
+	    	$scope.events.push(response.data.items[i]);
+	    }
+	  }, function errorCallback(response) {
+	    console.log('Error');
+	    console.log(response.data.error.errors);
+	  });
 
 	$scope.exec = [
 		{
@@ -75,3 +106,4 @@ ieeeApp.controller('HomeCtrl', function($scope) {
 		}
 	];
 });
+

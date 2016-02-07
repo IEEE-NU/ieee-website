@@ -4,7 +4,7 @@
 		<title>IEEE Northwestern</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="Author" content="">
+		<meta name="Author" content="IEEE NU">
 
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
 		<link rel="stylesheet" href="custom.css">
@@ -84,13 +84,30 @@
 		<section id="events">
 			<div class="container">
 				<h3>Events</h3>
+				<div class="events-container">
+					<div class="event" ng-repeat="event in events">
+						<h4 class="event-title" ng-if="event.fblink"><a href="{{event.fblink}}">{{event.summary}}</a></h4>
+						<h4 class="event-title" ng-if="!event.fblink">{{event.summary}}</h4>
+						<p ng-if="event.start.date">{{event.start.date | date:'MMM dd'}} - {{event.end.date | date:'MMM dd, yyyy'}}</p>
+						<p ng-if="event.start.dateTime">{{event.start.dateTime | date:'MMM d, yyyy'}}</p>
+						<p ng-if="event.start.dateTime">{{event.start.dateTime | date:'h:mm a'}} - {{event.end.dateTime | date:'h:mm a'}}</p>
+						<p ng-if="event.location">Location: {{event.location}}</p>
+						<p ng-if="event.description">{{event.description}}</p>
+					</div>
+				</div>
+
+				<!-- <h3>Events</h3> -->
+				<!-- <iframe src="https://calendar.google.com/calendar/embed?src=ieee%40u.northwestern.edu&ctz=America/Chicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+
+				<!-- <ul id="events-upcoming"></ul> -->
+				<!-- <ul id="events-past"></ul> -->
 			</div>
 		</section>
 
 		<section id="members">
 			<div class="container">
 				<h3>Executive Board</h3>
-				<div ng-repeat="member in exec" ng-if="$index % 4 == 0" class="row">
+				<!-- <div ng-repeat="member in exec" ng-if="$index % 4 == 0" class="row">
 					<div class="col-md-3">
 						<img ng-src="{{exec[$index].img}}">
 						<h4>{{exec[$index].name}}</h4>
@@ -111,7 +128,19 @@
 						<h4>{{exec[$index + 3].name}}</h4>
 						<p>{{exec[$index + 3].position}}</p>
 					</div>
+				</div> -->
+
+				<div class="row">
+				    <div ng-repeat="member in exec">
+				        <div class="clearfix" ng-if="$index % 4 == 0"></div>
+				        <div class="col-md-3">
+				            <img ng-src="{{member.img}}">
+							<h4>{{member.name}}</h4>
+							<p>{{member.position}}</p>
+				        </div>
+				    </div>
 				</div>
+
 			</div>
 		</section>
 		
@@ -126,8 +155,11 @@
 		<script src="vendor/angular-animate/angular-animate.js"></script>
 		<script src="vendor/angular-scroll/angular-scroll.js"></script>
 		<script src="vendor/jquery/jquery.js"></script>
+		<!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> -->
 		<script src="vendor/bootstrap/js/bootstrap.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/hamburger.js"></script>
+		<!-- <script src="js/format-google-calendar.js"></script> -->
+		<!-- <script src="js/eventfeed.js"></script> -->
 	</body>
 </html>

@@ -1,9 +1,9 @@
 .jumbotron {
   height: 95vh;
   background: linear-gradient( to right,
-    rgba(0, 25, 150, 0.7),
-    rgba(0, 0, 0, 0.3),
-    rgba(0, 25, 150, 0.7)    
+    rgba(150, 150, 175, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(150, 150, 175, 0.7)    
     ), url("assets/backgrounds/IEEE_Ford.jpg") no-repeat center center fixed; /* Check cross-browser compatibility of linear gradient */
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -197,4 +197,31 @@ footer {
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
   transition-delay: 0s, 0.3s;
+}
+
+/*#events-upcoming, #events-past {
+  list-style-type: none;
+}*/
+
+.events-container {
+  /*background-color: white;
+  color: black;
+  height: 600px;
+  overflow-y: scroll*/;
+}
+
+.event {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  border-bottom: 1px solid #FFF;
+}
+
+.event-title {
+  /*text-align: center;*/
+}
+
+.event-title a {
+  color: currentColor;
 }
