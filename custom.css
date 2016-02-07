@@ -19,21 +19,21 @@ section h3 {
 	text-align: center;
 }
 
-html {
-	position: relative;
-	min-height: 100%;
-}
-body {
-	margin: 0 0 60px; /* bottom = footer height */
-}
+
 footer {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 60px;
+	position: relative;
+	text-align:center;
+	padding-top: 20px;
+	height: 80px;
 	width: 100%;
 	z-index: 1;
 	background-color: #003f5d;
+	
+}
+
+footer span {
+	padding-right: 10px;
+	padding-left: 10px
 }
 
 .container {
