@@ -37,8 +37,7 @@ footer {
 }
 
 #facebook, #ieee, #email {
-	padding-left: 40px;
-	padding-right: 40px;
+	margin-right: 40px;
 	height: 40px;
 	width: 40px;
 	display:inline-block;
