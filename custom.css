@@ -27,20 +27,50 @@ section h3 {
 
 
 footer {
-	position: relative;
 	text-align:center;
+	position: relative;
 	padding-top: 20px;
 	height: 80px;
 	width: 100%;
 	z-index: 1;
-	background-color: #003f5d;
-	
+	background-color: #003f5d;	
 }
 
-footer span {
-	padding-right: 10px;
-	padding-left: 10px
+#facebook, #ieee, #email {
+	padding-left: 40px;
+	padding-right: 40px;
+	height: 40px;
+	width: 40px;
+	display:inline-block;
 }
+
+#facebook {
+	background: url("assets/backgrounds/facebook-stack.png") no-repeat;
+	background-position: -5px -5px;
+}
+
+#facebook:hover {
+	background-position: -5px -55px;	
+}
+
+#ieee {
+	background: url("assets/backgrounds/ieee-stack.png") no-repeat;
+	background-position: -5px -5px;
+}
+
+#ieee:hover {
+	background-position: -5px -55px;	
+}
+
+#email {
+	background: url("assets/backgrounds/email-stack.png") no-repeat;
+	background-position: -5px -5px;
+}
+
+#email:hover {
+	background-position: -5px -55px;	
+}
+
 
 .container {
 	padding-left: 20%;
