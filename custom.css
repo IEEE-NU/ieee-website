@@ -3,6 +3,7 @@ body {
   font-weight:300;
 }
 
+/* JUMBOTRON HEADER STYLE*/
 .jumbotron {
   height: 95vh;
   background: url("assets/backgrounds/IEEE_Ford.jpg") no-repeat center center fixed;
@@ -13,63 +14,28 @@ body {
   margin-bottom:0px;
 }
 
+#header {
+  z-index: 0;
+  right: 5%;
+  text-align: center;
+}
+
+#header h1, #header h2 {
+  color: white;
+}
+
+/*GENERAL SECTION STYLING*/
 section {
 	position: relative;
 	z-index: 1;
 	min-height: 75vh;
-	padding-top: 10%;
+	padding-top: 8%;
 	padding-bottom: 10%;
 }
 
 section h3 {
 	text-align: center;
 }
-
-
-footer {
-	text-align:center;
-	position: relative;
-	padding-top: 20px;
-	height: 80px;
-	width: 100%;
-	z-index: 1;
-	background-color: #003f5d;	
-}
-
-#facebook, #ieee, #email {
-	margin-right: 40px;
-	height: 40px;
-	width: 40px;
-	display:inline-block;
-}
-
-#facebook {
-	background: url("assets/backgrounds/facebook-stack.png") no-repeat;
-	background-position: -5px -5px;
-}
-
-#facebook:hover {
-	background-position: -5px -55px;	
-}
-
-#ieee {
-	background: url("assets/backgrounds/ieee-stack.png") no-repeat;
-	background-position: -5px -5px;
-}
-
-#ieee:hover {
-	background-position: -5px -55px;	
-}
-
-#email {
-	background: url("assets/backgrounds/email-stack.png") no-repeat;
-	background-position: -5px -5px;
-}
-
-#email:hover {
-	background-position: -5px -55px;	
-}
-
 
 .container {
 	padding-left: 20%;
@@ -84,27 +50,109 @@ footer {
 	position: fixed;
 }
 
-#header {
-	z-index: 0;
-	right: 5%;
-	text-align: center;
-}
-
-#header h1, #header h2 {
-	color: white;
-}
-
+/*********************/
+/* BEGIN ABOUT STYLE */
+/*********************/
 #about {
   background-color: #B8B8B8;
+  
 }
+/* END ABOUT STYLE */
 
+
+/*******************/
+/* BEGIN WWD STYLE */
+/*******************/
 #what-we-do {
-	background-color: #07abfb;
+  background-color:white;
 }
 
-#events {
-  background-color: #00537b;
-  color:white;
+.wwd-box {
+  position: relative;
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.wwd-box:hover {
+  opacity: 0.5;
+}
+
+.wwd-box .smalltext {
+  visibility: hidden;
+  color: white;
+  position:absolute;
+  text-align:center;
+  top: 30%;
+  width: 100%;
+  padding-left:10%;
+  padding-right:10%;
+  opacity: 0;
+  -webkit-transition: all 300ms ease-out;  
+  -moz-transition: all 300ms ease-out;  
+  -o-transition: all 300ms ease-out;  
+  -ms-transition: all 300ms ease-out;  
+  transition: all 300ms ease-out;  
+}
+
+.wwd-box:hover .smalltext {
+  visibility: visible;
+  color: white;
+  position:absolute;
+  text-align: center;
+  padding-left:10%;
+  padding-right:10%;
+  top: 25%;
+  width: 100%;
+  opacity: 1;
+}
+
+.wwd-box .bigtext {
+  color: white;
+  position:absolute;
+  text-align: center;
+  top: 10%;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: all 300ms ease-out;  
+  -moz-transition: all 300ms ease-out;  
+  -o-transition: all 300ms ease-out;  
+  -ms-transition: all 300ms ease-out;  
+  transition: all 300ms ease-out; 
+}
+
+.wwd-box:hover .bigtext {
+  visibility:hidden;
+  opacity: 0;
+}
+/* END WWD STYLE */
+
+/******************/
+/* BEGIN AE STYLE */
+/******************/
+#AE {
+  background-color: #07abfb;
+}
+/*END AE STYLE*/
+
+/**************************/
+/* BEGIN EXEC BOARD STYLE */
+/**************************/
+#members .container {
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#members .row {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#members .row img {
+  height:8em;
+  border-radius: 50%;
 }
 
 #members .container {
@@ -126,10 +174,95 @@ footer {
 #member {
   padding-bottom: 50px;
 }
+/* END EXEC BOARD STYLE */
 
-/******************/
-/* Hamburger Menu */
-/******************/
+/**********************/
+/* BEGIN EVENTS STYLE */
+/**********************/
+#events {
+  background-color: #00537b;
+  color:white;
+}
+
+/*#events-upcoming, #events-past {
+  list-style-type: none;
+}*/
+
+.events-container {
+  /*background-color: white;
+  color: black;
+  height: 600px;
+  overflow-y: scroll*/;
+}
+
+.event {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  border-bottom: 1px solid #FFF;
+}
+
+.event-title {
+  /*text-align: center;*/
+}
+
+.event-title a {
+  color: currentColor;
+}
+/* END EVENTS STYLE */
+
+/**********************/
+/* Begin Footer Style */
+/**********************/
+footer {
+  text-align:center;
+  position: relative;
+  padding-top: 20px;
+  height: 80px;
+  width: 100%;
+  z-index: 1;
+  background-color: #003f5d;  
+}
+
+#facebook, #ieee, #email {
+  margin-right: 40px;
+  height: 40px;
+  width: 40px;
+  display:inline-block;
+}
+
+#facebook {
+  background: url("assets/backgrounds/facebook-stack.png") no-repeat;
+  background-position: -5px -5px;
+}
+
+#facebook:hover {
+  background-position: -5px -55px;  
+}
+
+#ieee {
+  background: url("assets/backgrounds/ieee-stack.png") no-repeat;
+  background-position: -5px -5px;
+}
+
+#ieee:hover {
+  background-position: -5px -55px;  
+}
+
+#email {
+  background: url("assets/backgrounds/email-stack.png") no-repeat;
+  background-position: -5px -5px;
+}
+
+#email:hover {
+  background-position: -5px -55px;  
+}
+/* End Footer Style */
+
+/********************/
+/* BEGIN MENU STYLE */
+/********************/
 #menu {
   color: #f28200;
   position: fixed;
@@ -139,10 +272,10 @@ footer {
 }
 
 #menu ul {
-	margin-left: 0;
+  margin-left: 0;
   margin-top:5px;
   padding-top:5px;
-	padding-left: 10px;
+  padding-left: 10px;
   padding-right: 10px;
   background: rgba(248, 248, 248, 0.5);
   -moz-border-radius: 6px; 
@@ -151,7 +284,7 @@ footer {
 }
 
 #menu li {
-	margin-left:0;
+  margin-left:0;
   padding-bottom: 10px;
   list-style: none;
 }
@@ -271,177 +404,4 @@ footer {
 .c-hamburger--htx.is-active span::after {
   transition-delay: 0s, 0.3s;
 }
-
-/*#events-upcoming, #events-past {
-  list-style-type: none;
-}*/
-
-.events-container {
-  /*background-color: white;
-  color: black;
-  height: 600px;
-  overflow-y: scroll*/;
-}
-
-.event {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  margin-left: 3em;
-  margin-right: 3em;
-  border-bottom: 1px solid #FFF;
-}
-
-.event-title {
-  /*text-align: center;*/
-}
-
-.event-title a {
-  color: currentColor;
-}
-
-#what-we-do {
-	background-color: #07abfb;
-}
-
-#events {
-  background-color: #00537b;
-  color:white;
-}
-
-#members .container {
-	text-align: center;
-	padding-left: 15%;
-	padding-right: 15%;
-}
-
-#members .row {
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-#members .row img {
-	height:8em;
-	border-radius: 50%;
-}
-
-/******************/
-/* Hamburger Menu */
-/******************/
-#menu {
-  color: #f28200;
-  position: fixed;
-  z-index: 99;
-  top: 10px;
-  left: 10px;
-}
-
-#menu ul {
-	margin-left: 0;
-	padding-left: 10px;
-}
-
-#menu li {
-	margin-left:0;
-  padding-bottom: 10px;
-  list-style: none;
-}
-
-.c-hamburger {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 48px;
-  height: 48px;
-  font-size: 0;
-  text-indent: -9999px;
-  appearance: none;
-  box-shadow: none;
-  border-radius: none;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-  background: none;
-}
-
-.c-hamburger:focus {
-  outline: none;
-}
-
-.c-hamburger span {
-  display: block;
-  position: absolute;
-  top: 22px;
-  left: 9px;
-  right: 9px;
-  height: 4px;
-  background: #f28200;
-}
-
-.c-hamburger span::before,
-.c-hamburger span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #f28200;
-  content: "";
-}
-
-.c-hamburger span::before {
-  top: -10px;
-}
-
-.c-hamburger span::after {
-  bottom: -10px;
-}
-
-.c-hamburger--htx {
-  /*background-color: #003f5d;*/
-}
-
-.c-hamburger--htx span {
-  transition: background 0s 0.3s;
-}
-
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
-}
-
-.c-hamburger--htx span::before {
-  transition-property: top, transform;
-}
-
-.c-hamburger--htx span::after {
-  transition-property: bottom, transform;
-}
-
-/* active state, i.e. menu open */
-.c-hamburger--htx.is-active {
-  /*background-color: #cb0032;*/
-}
-
-.c-hamburger--htx.is-active span {
-  background: none;
-}
-
-.c-hamburger--htx.is-active span::before {
-  top: 0;
-  transform: rotate(45deg);
-  background-color: #c36900;
-}
-
-.c-hamburger--htx.is-active span::after {
-  bottom: 0;
-  transform: rotate(-45deg);
-  background-color: #c36900;
-}
-
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s;
-}
+/* END MENU STYLE */
