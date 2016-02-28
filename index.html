@@ -2,13 +2,14 @@
 <html lang="en" ng-app="ieeeApp">
 <head>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:500,300' rel='stylesheet' type='text/css'>
-    <title>IEEE Northwestern</title>
+    <title>IEEE NU</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Author" content="IEEE NU">
 
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="custom.css">
+    <link rel="shortcut icon" href="favicon.ico"/>
 </head>
 
 <body ng-controller="HomeCtrl">
@@ -20,9 +21,9 @@
             <ul ng-show="menuOpen" class="fade">
                 <li><a href="#about" du-smooth-scroll>About Us</a></li>
                 <li><a href="#what-we-do" du-smooth-scroll>What We Do</a></li>
-                <li><a href="#AE" du-smooth-scroll>AE Program</a></li>
                 <li><a href="#events" du-smooth-scroll>Events</a></li>
                 <li><a href="#members" du-smooth-scroll>Executive Board</a></li>
+                <li><a href="#AE" du-smooth-scroll>AE Program</a></li>
             </ul>
         </nav>
     </div>
@@ -38,7 +39,10 @@
         <div class="container">
             <h3>About Us</h3>
             <p>
-                The Northwestern University Student Chapter of the Institute of Electrical and Electronics Engineers (NU IEEE) is an organization dedicated to providing the resources and outlets through which the University's aspiring engineers, tinkerers, and hackers can learn and create with their craft.
+                The Northwestern University Student Chapter of the Institute of Electrical and Electronics Engineers (IEEE NU) is an organization dedicated to providing the resources and outlets through which the University's aspiring engineers, tinkerers, and hackers can learn and create with their craft.
+            </p>
+            <p>
+                Our chapter is directly supported and funded by Northwestern University's <a target="_blank" href="http://www.mccormick.northwestern.edu/eecs/">Electrical Engineering and Computer Science</a> (EECS) department.
             </p>
         </div>
     </section>
@@ -50,41 +54,47 @@
 				<div class="col-md-4">
 					<div class="wwd-box">
 						<img src="assets/wwd/educate.jpg" class="img-responsive" alt=""/>
-						<h1 span class="bigtext">Educate</span></h1>
-						<span class="smalltext">Provide mentorship and technical skills training.</span>
+						<h1 class="bigtext">Educate</h1>
+						<p class="smalltext">Provide mentorship and technical skills training.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="wwd-box">
 						<img src="assets/wwd/explore.jpg" class="img-responsive" />
-						<h1 span class="bigtext">Explore</span></h1>
-						<p class="smalltext">Sponsor companies on campus for tech talks.</p>
+						<h1 class="bigtext">Explore</h1>
+						<p class="smalltext">Put on tech talks and workshops.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="wwd-box">
 						<img src="assets/wwd/enjoy.jpg" class="img-responsive" />
-						<h1 span class="bigtext">Enjoy</span></h1>
-						<p class="smalltext">Host EECS Olympics, barbeques, and more.</p>
+						<h1 class="bigtext">Enjoy</h1>
+						<p class="smalltext">Host barbecues, hack nights, and other fun activites.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-    <section id="AE">
-        <div class="container">
-            <h3>Associate Executive Program</h3>
-            <p>For students who are interested in some crazy stuff.</p>
-        </div>
-    </section>
-
     <section id="events">
         <div class="container">
-            <h3>Events</h3>
+            <h3 ng-if="upcomingEvents.length > 0">Upcoming Events</h3>
             <div class="events-container">
-                <div class="event" ng-repeat="event in events">
-                    <h4 class="event-title" ng-if="event.fblink"><a href="{{event.fblink}}">{{event.summary}}</a></h4>
+                <div class="event" ng-repeat="event in upcomingEvents">
+                    <h4 class="event-title" ng-if="event.fblink"><a target="_blank" href="{{event.fblink}}">{{event.summary}}</a></h4>
+                    <h4 class="event-title" ng-if="!event.fblink">{{event.summary}}</h4>
+                    <p ng-if="event.start.date">{{event.start.date | date:'MMM dd'}} - {{event.end.date | date:'MMM dd, yyyy'}}</p>
+                    <p ng-if="event.start.dateTime">{{event.start.dateTime | date:'MMM d, yyyy'}}</p>
+                    <p ng-if="event.start.dateTime">{{event.start.dateTime | date:'h:mm a'}} - {{event.end.dateTime | date:'h:mm a'}}</p>
+                    <p ng-if="event.location">Location: {{event.location}}</p>
+                    <p ng-if="event.description">{{event.description}}</p>
+                </div>
+            </div>
+
+            <h3 ng-if="pastEvents.length > 0">Past Events</h3>
+            <div class="events-container">
+                <div class="event" ng-repeat="event in pastEvents">
+                    <h4 class="event-title" ng-if="event.fblink"><a target="_blank" href="{{event.fblink}}">{{event.summary}}</a></h4>
                     <h4 class="event-title" ng-if="!event.fblink">{{event.summary}}</h4>
                     <p ng-if="event.start.date">{{event.start.date | date:'MMM dd'}} - {{event.end.date | date:'MMM dd, yyyy'}}</p>
                     <p ng-if="event.start.dateTime">{{event.start.dateTime | date:'MMM d, yyyy'}}</p>
@@ -99,29 +109,6 @@
     <section id="members">
         <div class="container">
             <h3>Executive Board</h3>
-            <!-- <div ng-repeat="member in exec" ng-if="$index % 4 == 0" class="row">
-                <div class="col-md-3">
-                    <img ng-src="{{exec[$index].img}}">
-                    <h4>{{exec[$index].name}}</h4>
-                    <p>{{exec[$index].position}}</p>
-                </div>
-                <div class="col-md-3">
-                    <img ng-src="{{exec[$index + 1].img}}">
-                    <h4>{{exec[$index + 1].name}}</h4>
-                    <p>{{exec[$index + 1].position}}</p>
-                </div>
-                <div class="col-md-3">
-                    <img ng-src="{{exec[$index + 2].img}}">
-                    <h4>{{exec[$index + 2].name}}</h4>
-                    <p>{{exec[$index + 2].position}}</p>
-                </div>
-                <div class="col-md-3">
-                    <img ng-src="{{exec[$index + 3].img}}">
-                    <h4>{{exec[$index + 3].name}}</h4>
-                    <p>{{exec[$index + 3].position}}</p>
-                </div>
-            </div> -->
-
             <div class="row">
                 <div ng-repeat="member in exec">
                     <div class="clearfix" ng-if="$index % 4 == 0"></div>
@@ -132,6 +119,15 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="AE">
+        <div class="container">
+            <h3>Associate Executive Program</h3>
+            <p>Interested in exploring the world of web or mobile development? Want to take a crack at building something fun or useful with your hardware of choice? Eager to start some sort of project, but don't know how to get going?</p>
+            <p>Every fall quarter, the IEEE Executive Board takes several motivated freshman and sophomore students and guides them through a program focused on mentorship and the introductory exploration of an EECS-related technology.</p>
+            <p><b>Look out for new applications in Fall 2016!</b></p> 
         </div>
     </section>
 

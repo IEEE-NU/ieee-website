@@ -8,18 +8,15 @@ ieeeApp.controller('HomeCtrl', function($scope, $http) {
 		$scope.menuOpen = !$scope.menuOpen;
 	};
 
-	$scope.events = [];
+	$scope.upcomingEvents = [];
+	$scope.pastEvents = [];
 
-	var today = new Date();
-	var timeMin = String(today.getFullYear() - 1) + '-' + String(today.getMonth()+1) + '-' + String(today.getDate()) + 'T00:00:00-06:00';
-	var url = 'https://www.googleapis.com/calendar/v3/calendars/ieee@u.northwestern.edu/events?key=AIzaSyDJ41XTLp-sCzITSfKSHkUS_PpCGhczOIU&singleEvents=true&orderBy=startTime&timeMin=' + timeMin;
-	$http.get(url).then(function successCallback(response) {
-	    for (var i = 0; i < response.data.items.length; i++) {
-
+	function parseEvents(response, arr) {
+		for (var i = 0; i < response.data.items.length; i++) {
 	    	// Link to facebook event should be first thing in Google calendar description
 	    	var description = response.data.items[i].description;
 	    	if (description) {
-	    		var a = description.split();
+	    		var a = description.replace( /\n/g, " " ).split(" ");
 	    		for (var j = 0; j < a.length; j++) {
 	    			if (a[j].includes("facebook.com")) {
 	    				var fblink = a[j];
@@ -33,35 +30,59 @@ ieeeApp.controller('HomeCtrl', function($scope, $http) {
 		    		fblink = "";
 		    	}
 	    	}
-	    	$scope.events.push(response.data.items[i]);
+	    	arr.push(response.data.items[i]);
+	    	console.log("item:", response.data.items[i])
 	    }
-	  }, function errorCallback(response) {
+	}
+
+	var today = new Date();
+	var todayString = String(today.getFullYear()) + '-' + String(today.getMonth()+1) + '-' + String(today.getDate()) + 'T00:00:00-06:00';
+	var url = 'https://www.googleapis.com/calendar/v3/calendars/ieee@u.northwestern.edu/events?key=AIzaSyDJ41XTLp-sCzITSfKSHkUS_PpCGhczOIU&singleEvents=true&orderBy=startTime&maxResults=3&timeMin=' + todayString;
+
+	$http.get(url).then(function successCallback(response) {
+	    parseEvents(response, $scope.upcomingEvents);
+	 }, function errorCallback(response) {
 	    console.log('Error');
 	    console.log(response.data.error.errors);
-	  });
+	 });
+
+	var timeMin = String(today.getFullYear()-1) + '-' + String(today.getMonth()+1) + '-' + String(today.getDate()) + 'T00:00:00-06:00';
+	var url = 'https://www.googleapis.com/calendar/v3/calendars/ieee@u.northwestern.edu/events?key=AIzaSyDJ41XTLp-sCzITSfKSHkUS_PpCGhczOIU&singleEvents=true&orderBy=startTime&timeMax=' + todayString;
+
+	$http.get(url).then(function successCallback(response) {
+	    parseEvents(response, $scope.pastEvents);
+	    $scope.pastEvents.reverse();
+	    if ($scope.pastEvents.length > 2) {
+		    $scope.pastEvents = [$scope.pastEvents[0], $scope.pastEvents[1]];
+		}
+	 }, function errorCallback(response) {
+	    console.log('Error');
+	    console.log(response.data.error.errors);
+	 });	
+
 
 	$scope.exec = [
 		{
 			name: 'William Xiao',
-			position: 'Supreme Overlord',
+			position: 'President',
 			img: 'assets/headshots/William.jpg'
 		},
 
 		{
+			name: 'Holliday Schuler',
+			position: 'Treasurer',
+			img: 'assets/headshots/Holliday.jpg'
+		},
+
+		{
 			name: 'Kushal Gourikrishna',
-			position: 'Co-President',
+			position: 'Secretary',
 			img: 'assets/headshots/Kush.jpg'
 		},
 
 		{
-			name: 'Adam He',
-			position: 'Co-President',
-			img: 'assets/headshots/Adam.jpg'
-		},
-
-		{
 			name: 'Curtis Wang',
-			position: 'Wise Old Man',
+			position: 'Resident Elder',
 			img: 'assets/headshots/Curtis.jpg'
 		},
 
@@ -76,8 +97,18 @@ ieeeApp.controller('HomeCtrl', function($scope, $http) {
 		},
 
 		{
+			name: 'Ricardo Rivas',
+			img: 'assets/headshots/Ricardo.jpg'
+		},
+
+		{
 			name: 'Bryanna Yeh',
 			img: 'assets/headshots/Bryanna.jpg'
+		},
+
+		{
+			name: 'Adam He',
+			img: 'assets/headshots/Adam.jpg'
 		},
 
 		{
@@ -88,16 +119,6 @@ ieeeApp.controller('HomeCtrl', function($scope, $http) {
 		{
 			name: 'Kevin Wilde',
 			img: 'assets/headshots/Kevin_Wilde.jpg'
-		},
-
-		{
-			name: 'Holliday Schuler',
-			img: 'assets/headshots/Holliday.jpg'
-		},
-
-		{
-			name: 'Ricardo Rivas',
-			img: 'assets/headshots/Ricardo.jpg'
 		},
 
 		{

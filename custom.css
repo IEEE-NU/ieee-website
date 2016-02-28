@@ -86,8 +86,8 @@ section h3 {
   text-align:center;
   top: 30%;
   width: 100%;
-  padding-left:10%;
-  padding-right:10%;
+  padding-left:5%;
+  padding-right:5%;
   opacity: 0;
   -webkit-transition: all 300ms ease-out;  
   -moz-transition: all 300ms ease-out;  
@@ -101,8 +101,8 @@ section h3 {
   color: white;
   position:absolute;
   text-align: center;
-  padding-left:10%;
-  padding-right:10%;
+  padding-left:5%;
+  padding-right:5%;
   top: 25%;
   width: 100%;
   opacity: 1;
@@ -128,13 +128,31 @@ section h3 {
 }
 /* END WWD STYLE */
 
-/******************/
-/* BEGIN AE STYLE */
-/******************/
-#AE {
-  background-color: #07abfb;
+/**********************/
+/* BEGIN EVENTS STYLE */
+/**********************/
+#events {
+  background-color: #00537b;
+  color:white;
 }
-/*END AE STYLE*/
+
+.event {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  border-bottom: 1px solid #FFF;
+}
+
+.event-title a {
+  color: #f28200;
+  text-decoration: underline;
+}
+
+.event-title:hover a {
+  color: #c36900;
+}
+/* END EVENTS STYLE */
 
 /**************************/
 /* BEGIN EXEC BOARD STYLE */
@@ -176,41 +194,14 @@ section h3 {
 }
 /* END EXEC BOARD STYLE */
 
-/**********************/
-/* BEGIN EVENTS STYLE */
-/**********************/
-#events {
-  background-color: #00537b;
-  color:white;
+/******************/
+/* BEGIN AE STYLE */
+/******************/
+#AE {
+  background-color: #07abfb;
+  color: white;
 }
-
-/*#events-upcoming, #events-past {
-  list-style-type: none;
-}*/
-
-.events-container {
-  /*background-color: white;
-  color: black;
-  height: 600px;
-  overflow-y: scroll*/;
-}
-
-.event {
-  padding-top: 3em;
-  padding-bottom: 3em;
-  margin-left: 3em;
-  margin-right: 3em;
-  border-bottom: 1px solid #FFF;
-}
-
-.event-title {
-  /*text-align: center;*/
-}
-
-.event-title a {
-  color: currentColor;
-}
-/* END EVENTS STYLE */
+/*END AE STYLE*/
 
 /**********************/
 /* Begin Footer Style */
