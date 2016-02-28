@@ -3,6 +3,16 @@ body {
   font-weight:300;
 }
 
+a {
+  color: #f28200;
+}
+
+a:hover {
+  color: #c36900;
+  text-decoration: underline;
+}
+
+
 /* JUMBOTRON HEADER STYLE*/
 .jumbotron {
   height: 95vh;
@@ -54,8 +64,8 @@ section h3 {
 /* BEGIN ABOUT STYLE */
 /*********************/
 #about {
-  background-color: #B8B8B8;
-  
+  background-color: #6f6f6f;
+  color:white;
 }
 /* END ABOUT STYLE */
 
@@ -146,11 +156,11 @@ section h3 {
 
 .event-title a {
   color: #f28200;
-  text-decoration: underline;
 }
 
 .event-title:hover a {
   color: #c36900;
+  text-decoration: underline;
 }
 /* END EVENTS STYLE */
 
