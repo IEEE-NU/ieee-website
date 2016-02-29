@@ -107,13 +107,13 @@ ieeeApp.controller('HomeCtrl', function($scope, $http) {
 		},
 
 		{
-			name: 'Adam He',
-			img: 'assets/headshots/Adam.jpg'
+			name: 'Chris Chen',
+			img: 'assets/headshots/Chris.jpg'
 		},
 
 		{
-			name: 'Chris Chen',
-			img: 'assets/headshots/Chris.jpg'
+			name: 'Adam He',
+			img: 'assets/headshots/Adam.jpg'
 		},
 
 		{
@@ -123,7 +123,7 @@ ieeeApp.controller('HomeCtrl', function($scope, $http) {
 
 		{
 			name: 'Larry Zhao',
-			img: 'assets/headshots/Yeezy.jpg'
+			img: 'assets/headshots/Larry.jpg'
 		}
 	];
 });
