@@ -77,6 +77,11 @@ section h3 {
   background-color:white;
 }
 
+.wwd-container {
+  position:relative;
+  width:100%;
+}
+
 .wwd-box {
   position: relative;
   opacity: 1;
@@ -85,11 +90,11 @@ section h3 {
   -webkit-transition: opacity .25s ease-in-out;
 }
 
-.wwd-box:hover {
-  opacity: 0.5;
+.wwd-container:hover .wwd-box {
+  opacity: 0.25;
 }
 
-.wwd-box .smalltext {
+.wwd-container .smalltext {
   visibility: hidden;
   color: white;
   position:absolute;
@@ -106,9 +111,9 @@ section h3 {
   transition: all 300ms ease-out;  
 }
 
-.wwd-box:hover .smalltext {
+.wwd-container:hover .smalltext {
   visibility: visible;
-  color: white;
+  color: black;
   position:absolute;
   text-align: center;
   padding-left:5%;
@@ -132,7 +137,7 @@ section h3 {
   transition: all 300ms ease-out; 
 }
 
-.wwd-box:hover .bigtext {
+.wwd-container:hover .bigtext {
   visibility:hidden;
   opacity: 0;
 }
@@ -223,7 +228,7 @@ footer {
   height: 80px;
   width: 100%;
   z-index: 1;
-  background-color: #003f5d;  
+  background-color: #003f5d;
 }
 
 #facebook, #ieee, #email {
