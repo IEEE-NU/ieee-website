@@ -1,6 +1,6 @@
 var ieeeApp = angular.module('ieeeApp', ['duScroll', 'ngAnimate']);
 
-ieeeApp.controller('HomeCtrl', function($scope, $http) {
+ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 
 	$scope.menuOpen = false;
 
@@ -116,5 +116,5 @@ ieeeApp.controller('HomeCtrl', function($scope, $http) {
 			img: 'assets/headshots/curtis.jpg'
 		}
 	];
-});
+}]);
 
