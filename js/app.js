@@ -63,67 +63,57 @@ ieeeApp.controller('HomeCtrl', function($scope, $http) {
 
 	$scope.exec = [
 		{
-			name: 'William Xiao',
+			name: 'Chris Chen',
 			position: 'President',
-			img: 'assets/headshots/William.jpg'
-		},
-
-		{
-			name: 'Holliday Schuler',
-			position: 'Treasurer',
-			img: 'assets/headshots/Holliday.jpg'
+			img: 'assets/headshots/chris.jpg'
 		},
 
 		{
 			name: 'Kushal Gourikrishna',
+			position: 'Vice President',
+			img: 'assets/headshots/kush.jpg'
+		},
+
+		{
+			name: 'William Su',
 			position: 'Secretary',
-			img: 'assets/headshots/Kush.jpg'
+			img: 'assets/headshots/william_su.jpg'
 		},
 
 		{
-			name: 'Curtis Wang',
-			position: 'Resident Elder',
-			img: 'assets/headshots/Curtis.jpg'
-		},
-
-		{
-			name: 'Kevin Chen',
-			img: 'assets/headshots/Kevin_Chen.jpg'
-		},
-
-		{
-			name: 'Kapil Garg',
-			img: 'assets/headshots/Kapil.jpg'
-		},
-
-		{
-			name: 'Ricardo Rivas',
-			img: 'assets/headshots/Ricardo.jpg'
-		},
-
-		{
-			name: 'Bryanna Yeh',
-			img: 'assets/headshots/Bryanna.jpg'
-		},
-
-		{
-			name: 'Chris Chen',
-			img: 'assets/headshots/Chris.jpg'
-		},
-
-		{
-			name: 'Adam He',
-			img: 'assets/headshots/Adam.jpg'
-		},
-
-		{
-			name: 'Kevin Wilde',
-			img: 'assets/headshots/Kevin_Wilde.jpg'
+			name: 'Jared Fernandez',
+			position: 'Technical Director',
+			img: 'assets/headshots/jared.jpg'
 		},
 
 		{
 			name: 'Larry Zhao',
-			img: 'assets/headshots/Larry.jpg'
+			position: 'Industry and Outreach Director',
+			img: 'assets/headshots/larry.jpg'
+		},
+
+		{
+			name: 'Junhao Li',
+			position: 'Treasurer',
+			img: 'assets/headshots/jun.jpg'
+		},
+
+		{
+			name: 'Kevin Wilde',
+			position: 'Webmaster',
+			img: 'assets/headshots/kevin.jpg'
+		},
+
+		{
+			name: 'William Xiao',
+			position: 'Legacy Adviser',
+			img: 'assets/headshots/william_xiao.jpg'
+		},
+
+		{
+			name: 'Curtis Wang',
+			position: 'Graduate Adviser',
+			img: 'assets/headshots/curtis.jpg'
 		}
 	];
 });
