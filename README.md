@@ -1,5 +1,5 @@
 # IEEE NU Website
-This repository is home to the website the Student Branch of the Institute of Electrical and Electronics Engineers at Northwestern University (IEEE NU).
+This repository is home to the website for the Student Branch of the Institute of Electrical and Electronics Engineers at Northwestern University (IEEE NU).
 
 See the public deployment at: http://ieee.northwestern.edu
 
