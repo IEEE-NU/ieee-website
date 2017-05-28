@@ -63,51 +63,63 @@ ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 
 	$scope.exec = [
 		{
-			name: 'Chris Chen',
+			name: 'Conway Zhu',
 			position: 'President',
-			img: 'assets/headshots/chris.jpg'
-		},
-
-		{
-			name: 'Kushal Gourikrishna',
-			position: 'Vice President',
-			img: 'assets/headshots/kush.jpg'
+			img: 'assets/headshots/Conway.jpg'
 		},
 
 		{
 			name: 'William Su',
-			position: 'Secretary',
+			position: 'External Vice President',
 			img: 'assets/headshots/william_su.jpg'
 		},
 
 		{
 			name: 'Jared Fernandez',
-			position: 'Technical Director',
-			img: 'assets/headshots/jared.jpg'
+			position: 'Internal Vice President',
+			img: 'assets/headshots/Jared.jpg'
 		},
 
 		{
-			name: 'Larry Zhao',
-			position: 'Industry and Outreach Director',
-			img: 'assets/headshots/larry.jpg'
+			name: 'Isaac Lee',
+			position: 'Technical Program Director',
+			img: 'assets/headshots/Isaac.jpg'
 		},
 
 		{
-			name: 'Junhao Li',
+			name: 'Murphy Angelo',
+			position: 'Hack Night Coordinator',
+			img: 'assets/headshots/Murphy.jpg'
+		},
+
+		{
+			name: 'Shankar Salwan',
 			position: 'Treasurer',
-			img: 'assets/headshots/jun.jpg'
+			img: 'assets/headshots/Shankar.jpg'
 		},
 
 		{
-			name: 'Kevin Wilde',
+			name: 'Sanfeng Wang',
 			position: 'Webmaster',
+			img: 'assets/headshots/Sanfeng.jpg'
+		},
+
+		{
+			name: 'Will Ehrich',
+			position: 'Social Director',
 			img: 'assets/headshots/kevin.jpg'
 		},
 
 		{
-			name: 'William Xiao',
+			name: 'Jessica Li',
+			position: 'Publicity Chair',
+			img: 'assets/headshots/Jessica.jpg'
+		},
+
+		{
+			name: 'Chris Chen',
 			position: 'Legacy Adviser',
-			img: 'assets/headshots/william_xiao.jpg'
+			img: 'assets/headshots/Chris.jpg'
 		},
 
 		{
