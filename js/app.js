@@ -65,7 +65,7 @@ ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 		{
 			name: 'Conway Zhu',
 			position: 'President',
-			img: 'assets/headshots/Conway.jpg'
+			img: 'assets/headshots/Conway.JPG'
 		},
 
 		{
@@ -77,49 +77,49 @@ ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 		{
 			name: 'Jared Fernandez',
 			position: 'Internal Vice President',
-			img: 'assets/headshots/Jared.jpg'
+			img: 'assets/headshots/jared.jpg'
 		},
 
 		{
 			name: 'Isaac Lee',
 			position: 'Technical Program Director',
-			img: 'assets/headshots/Isaac.jpg'
+			img: 'assets/headshots/Isaac.JPG'
 		},
 
 		{
 			name: 'Murphy Angelo',
 			position: 'Hack Night Coordinator',
-			img: 'assets/headshots/Murphy.jpg'
+			img: 'assets/headshots/Murphy.JPG'
 		},
 
 		{
 			name: 'Shankar Salwan',
 			position: 'Treasurer',
-			img: 'assets/headshots/Shankar.jpg'
+			img: 'assets/headshots/Shankar.JPG'
 		},
 
 		{
 			name: 'Sanfeng Wang',
 			position: 'Webmaster',
-			img: 'assets/headshots/Sanfeng.jpg'
+			img: 'assets/headshots/Sanfeng.JPG'
 		},
 
 		{
 			name: 'Will Ehrich',
 			position: 'Social Director',
-			img: 'assets/headshots/kevin.jpg'
+			img: 'assets/headshots/william_ehrich.JPG'
 		},
 
 		{
 			name: 'Jessica Li',
 			position: 'Publicity Chair',
-			img: 'assets/headshots/Jessica.jpg'
+			img: 'assets/headshots/Jessica.JPG'
 		},
 
 		{
 			name: 'Chris Chen',
 			position: 'Legacy Adviser',
-			img: 'assets/headshots/Chris.jpg'
+			img: 'assets/headshots/chris.jpg'
 		},
 
 		{
@@ -127,6 +127,70 @@ ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 			position: 'Graduate Adviser',
 			img: 'assets/headshots/curtis.jpg'
 		}
+
+	];
+
+	$scope.pm = [
+		{
+			name: 'William Su',
+			position: 'External Vice President',
+			img: 'assets/headshots/william_su.jpg'
+		},
+
+		{
+			name: 'Jared Fernandez',
+			position: 'Internal Vice President',
+			img: 'assets/headshots/jared.jpg'
+		},
+
+		{
+			name: 'Isaac Lee',
+			position: 'Technical Program Director',
+			img: 'assets/headshots/Isaac.JPG'
+		},
+
+		{
+			name: 'Murphy Angelo',
+			position: 'Hack Night Coordinator',
+			img: 'assets/headshots/Murphy.JPG'
+		},
+
+		{
+			name: 'Shankar Salwan',
+			position: 'Treasurer',
+			img: 'assets/headshots/Shankar.JPG'
+		},
+
+		{
+			name: 'Sanfeng Wang',
+			position: 'Webmaster',
+			img: 'assets/headshots/Sanfeng.JPG'
+		},
+
+		{
+			name: 'Will Ehrich',
+			position: 'Social Director',
+			img: 'assets/headshots/william_ehrich.JPG'
+		},
+
+		{
+			name: 'Jessica Li',
+			position: 'Publicity Chair',
+			img: 'assets/headshots/Jessica.JPG'
+		},
+
+		{
+			name: 'Chris Chen',
+			position: 'Legacy Adviser',
+			img: 'assets/headshots/chris.jpg'
+		},
+
+		{
+			name: 'Curtis Wang',
+			position: 'Graduate Adviser',
+			img: 'assets/headshots/curtis.jpg'
+		}
+
 	];
 }]);
 
