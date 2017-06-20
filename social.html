@@ -2,7 +2,7 @@
 <html lang="en" ng-app="ieeeApp">
   <head>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:500,300' rel='stylesheet' type='text/css'>
-    <title>IE3 Program</title>
+    <title>Social Events</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Author" content="IEEE NU">
@@ -23,17 +23,16 @@
         <ul ng-show="menuOpen" class="fade">
           <li><a href="index.html">Back</a></li>
           <li><a href="#what-we-do" du-smooth-scroll>What We Do</a></li>
-          <li><a href="#what-is-it" du-smooth-scroll>What Is It?</a></li>
-          <li><a href="#quarterly-schedule" du-smooth-scroll>Quarterly Schedule</a></li>
-          <li><a href="#members" du-smooth-scroll>Project Mentors</a></li>
-          <li><a href="#showcase" du-smooth-scroll>Project Showcase</a></li>
+          <li><a href="#social-events" du-smooth-scroll>Social Events</a></li>
+          <li><a href="#annual-schedule" du-smooth-scroll>Annual Schedule</a></li>
+          <li><a href="#bbq" du-smooth-scroll>EECS Barbeque</a></li>
         </ul>
       </nav>
     </div>
 
     <div class="jumbotron">
       <div id="header" class="fixed">
-        <h1>IE3 Program</h1>
+        <h1>Social Events</h1>
         <h2>IEEE NU</h2>
       </div>
     </div>
@@ -52,41 +51,41 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="wwd-clicked-container">
-              <div class="wwd-box">
-                <img src="assets/wwd/explore.jpg" class="img-responsive" />
-                <h1 class="bigtext">Explore</h1> 
-                <p class="smalltext">Put on tech talks and workshops.</p>
-              </div>
+            <div class="wwd-container"> 
+              <a href="ie3.html"> 
+                <div class="wwd-box">
+                 <img src="assets/wwd/explore.jpg" class="img-responsive" /> 
+                  <h1 class="bigtext"> Explore </h1> 
+                </div>
+                  <p class="smalltext">Put on tech talks and workshops.</p> 
+              </a>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="wwd-container">
-              <a href="social.html">
-                <div class="wwd-box">
-                  <img src="assets/wwd/enjoy.jpg" class="img-responsive" />
-                  <h1 class="bigtext">Enjoy</h1>
-                </div>
+            <div class="wwd-clicked-container">
+              <div class="wwd-box">
+                <img src="assets/wwd/enjoy.jpg" class="img-responsive" />
+                <h1 class="bigtext">Enjoy</h1> 
                 <p class="smalltext">Host barbecues, hack nights, and other fun activites.</p>
-              </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="what-is-it">
+    <section id="social-events">
       <div class="container">
-        <h3>What Is It?</h3>
+        <h3>Social Events</h3>
         <div>
         <p>Some Bullshit Here</p>
         </div>
       </div>
     </section>
 
-    <section id="quarterly-schedule">
+    <section id="annual-schedule">
       <div class="container">
-        <h3 ng-if="upcomingEvents.length > 0">Quarterly Schedule</h3>
+        <h3 ng-if="upcomingEvents.length > 0">Annual Schedule</h3>
         <div class="events-container">
           <div class="event" ng-repeat="event in upcomingEvents">
             <h4 class="event-title" ng-if="event.fblink"><a target="_blank" href="{{event.fblink}}">{{event.summary}}</a></h4>
@@ -99,42 +98,14 @@
           </div>
         </div>
 
-        <h3 ng-if="pastEvents.length > 0">Past Events</h3>
-        <div class="events-container">
-          <div class="event" ng-repeat="event in pastEvents">
-            <h4 class="event-title" ng-if="event.fblink"><a target="_blank" href="{{event.fblink}}">{{event.summary}}</a></h4>
-            <h4 class="event-title" ng-if="!event.fblink">{{event.summary}}</h4>
-            <p ng-if="event.start.date">{{event.start.date | date:'MMM dd'}} - {{event.end.date | date:'MMM dd, yyyy'}}</p>
-            <p ng-if="event.start.dateTime">{{event.start.dateTime | date:'MMM d, yyyy'}}</p>
-            <p ng-if="event.start.dateTime">{{event.start.dateTime | date:'h:mm a'}} - {{event.end.dateTime | date:'h:mm a'}}</p>
-            <p ng-if="event.location">Location: {{event.location}}</p>
-            <p ng-if="event.description">{{event.description}}</p>
-          </div>
-        </div>
       </div>
     </section>
 
-    <section id="members">
+    <section id="bbq">
       <div class="container">
-        <h3>Project Mentors (to be determined)</h3>
-        <div class="row">
-          <div ng-repeat="member in pm">
-              <div class="clearfix" ng-if="$index % 4 == 0"></div>
-              <div id="member" class="col-md-3">
-                  <img ng-src="{{member.img}}" alt="headshot.jpg">
-                  <h4>{{member.name}}</h4>
-                  <p>{{member.position}}</p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="showcase">
-      <div class="container">
-          <h3>Project Showcase</h3>
-          <p>At the end of winter quarter, the teams who feel confident in their project are given with the oppurtunity to present their product in front of a panel of judges. This event is openn to the public, and fellow students as well as anyone in the area can come by and take a look at what our members have built.</p>
-          <p>This is not simply limited to the IE3 program. Any person or group who wishes to can participate and compete in the showcase.</p>
+          <h3>EECS Barbeque</h3>
+          <p>Every spring quarter IEEE partners with the Northwestern EECS department to organize a campus barbeque. Students, alumni, and faculty are all welcome. Some bullshit about bonding</p>
+          <p>Pictures Placeholder</p>
       </div>
     </section>
 
