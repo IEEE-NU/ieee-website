@@ -133,61 +133,61 @@ ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 	$scope.pm = [
 		{
 			name: 'William Su',
-			position: 'External Vice President',
+			position: 'Hardware',
 			img: 'assets/headshots/william_su.jpg'
 		},
 
 		{
 			name: 'Jared Fernandez',
-			position: 'Internal Vice President',
+			position: 'Machine Learning/NLP',
 			img: 'assets/headshots/jared.jpg'
 		},
 
 		{
 			name: 'Isaac Lee',
-			position: 'Technical Program Director',
+			position: 'Chatbot',
 			img: 'assets/headshots/Isaac.JPG'
 		},
 
 		{
-			name: 'Murphy Angelo',
-			position: 'Hack Night Coordinator',
+			name: 'Larry Zhao',
+			position: 'Game Development',
 			img: 'assets/headshots/Murphy.JPG'
 		},
 
 		{
 			name: 'Shankar Salwan',
-			position: 'Treasurer',
+			position: 'Web Development',
 			img: 'assets/headshots/Shankar.JPG'
 		},
 
 		{
 			name: 'Sanfeng Wang',
-			position: 'Webmaster',
+			position: 'Web Development',
 			img: 'assets/headshots/Sanfeng.JPG'
 		},
 
 		{
-			name: 'Will Ehrich',
-			position: 'Social Director',
+			name: 'Conway Zhu',
+			position: 'Web Development',
 			img: 'assets/headshots/william_ehrich.JPG'
 		},
 
 		{
-			name: 'Jessica Li',
-			position: 'Publicity Chair',
-			img: 'assets/headshots/Jessica.JPG'
-		},
-
-		{
-			name: 'Chris Chen',
-			position: 'Legacy Adviser',
+			name: 'Kevin Lee',
+			position: 'Web Development',
 			img: 'assets/headshots/chris.jpg'
 		},
 
 		{
+			name: 'Jessica Li',
+			position: 'Hardware',
+			img: 'assets/headshots/Jessica.JPG'
+		},
+
+		{
 			name: 'Curtis Wang',
-			position: 'Graduate Adviser',
+			position: 'Hardware',
 			img: 'assets/headshots/curtis.jpg'
 		}
 

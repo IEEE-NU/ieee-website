@@ -85,10 +85,11 @@
       </div>
     </section>
 
-    <section id="annual-schedule">
+    <section id="events">
       <div class="container">
         <h3 ng-if="upcomingEvents.length > 0">Annual Schedule</h3>
-        <div class="events-container">
+        <h4> Coming Soon! </h4>
+        <!-- <div class="events-container">
           <div class="event" ng-repeat="event in upcomingEvents">
             <h4 class="event-title" ng-if="event.fblink"><a target="_blank" href="{{event.fblink}}">{{event.summary}}</a></h4>
             <h4 class="event-title" ng-if="!event.fblink">{{event.summary}}</h4>
@@ -97,8 +98,8 @@
             <p ng-if="event.start.dateTime">{{event.start.dateTime | date:'h:mm a'}} - {{event.end.dateTime | date:'h:mm a'}}</p>
             <p ng-if="event.location">Location: {{event.location}}</p>
             <p ng-if="event.description"><i>{{event.description}}</i></p>
-          </div>
-        </div>
+          </div> 
+        </div>-->
 
       </div>
     </section>
