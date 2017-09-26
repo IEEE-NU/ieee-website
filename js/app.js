@@ -132,9 +132,45 @@ ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 
 	$scope.pm = [
 		{
+			name: 'Conway Zhu',
+			position: 'Web Development',
+			img: 'assets/headshots/Conway.JPG'
+		},
+
+		{
+			name: 'Shankar Salwan',
+			position: 'Web Development',
+			img: 'assets/headshots/Shankar.JPG'
+		},
+
+		{
+			name: 'Sanfeng Wang',
+			position: 'Web Development',
+			img: 'assets/headshots/Sanfeng.JPG'
+		},
+
+		{
+			name: 'Kevin Lee',
+			position: 'Web Development',
+			img: 'assets/headshots/chris.jpg'
+		},
+
+		{
 			name: 'William Su',
 			position: 'Hardware',
 			img: 'assets/headshots/william_su.jpg'
+		},
+
+		{
+			name: 'Curtis Wang',
+			position: 'Hardware',
+			img: 'assets/headshots/curtis.jpg'
+		},
+
+		{
+			name: 'Jessica Li',
+			position: 'Hardware',
+			img: 'assets/headshots/Jessica.JPG'
 		},
 
 		{
@@ -152,44 +188,8 @@ ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 		{
 			name: 'Larry Zhao',
 			position: 'Game Development',
-			img: 'assets/headshots/Murphy.JPG'
+			img: 'assets/headshots/Larry.JPG'
 		},
-
-		{
-			name: 'Shankar Salwan',
-			position: 'Web Development',
-			img: 'assets/headshots/Shankar.JPG'
-		},
-
-		{
-			name: 'Sanfeng Wang',
-			position: 'Web Development',
-			img: 'assets/headshots/Sanfeng.JPG'
-		},
-
-		{
-			name: 'Conway Zhu',
-			position: 'Web Development',
-			img: 'assets/headshots/william_ehrich.JPG'
-		},
-
-		{
-			name: 'Kevin Lee',
-			position: 'Web Development',
-			img: 'assets/headshots/chris.jpg'
-		},
-
-		{
-			name: 'Jessica Li',
-			position: 'Hardware',
-			img: 'assets/headshots/Jessica.JPG'
-		},
-
-		{
-			name: 'Curtis Wang',
-			position: 'Hardware',
-			img: 'assets/headshots/curtis.jpg'
-		}
 
 	];
 }]);
