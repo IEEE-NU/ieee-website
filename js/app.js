@@ -152,7 +152,7 @@ ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 		{
 			name: 'Kevin Lee',
 			position: 'Web Development',
-			img: 'assets/headshots/chris.jpg'
+			img: 'assets/headshots/kevin_lee.jpg'
 		},
 
 		{
