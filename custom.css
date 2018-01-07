@@ -173,6 +173,24 @@ section h3 {
 
 /* END WWD STYLE */
 
+/*********************/
+/* BEGIN SHOWCASE STYLE */
+/*********************/
+
+#showcase img {
+  align-items: center;
+  max-width: 500px;
+  max-height: 360px;
+}
+
+#showcase a {
+  color: #70149e;
+}
+
+/*********************/
+/* END SHOWCASE STYLE */
+/*********************/
+
 /**********************/
 /* BEGIN EVENTS STYLE */
 /**********************/
