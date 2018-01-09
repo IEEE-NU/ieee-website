@@ -185,6 +185,11 @@ section h3 {
 
 #showcase a {
   color: #70149e;
+  font-size: 16.5px;
+}
+
+#showcase p {
+  font-size: 15px;
 }
 
 /*********************/
