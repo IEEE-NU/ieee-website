@@ -70,13 +70,13 @@ ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 
 		{
 			name: 'William Su',
-			position: 'External Vice President',
+			position: 'Internal Vice President',
 			img: 'assets/headshots/william_su.jpg'
 		},
 
 		{
 			name: 'Jared Fernandez',
-			position: 'Internal Vice President',
+			position: 'External Vice President',
 			img: 'assets/headshots/jared.jpg'
 		},
 
