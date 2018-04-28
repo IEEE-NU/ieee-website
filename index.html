@@ -1,174 +1,190 @@
 ﻿<!DOCTYPE HTML>
 <html lang="en" ng-app="ieeeApp">
-  <head>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500,300' rel='stylesheet' type='text/css'>
-    <title>IEEE NU</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Author" content="IEEE NU">
 
-    <!--build:css styles.css-->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="custom.css">
-    <!-- /build -->
-    <link rel="shortcut icon" href="favicon.ico"/>
-  </head>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:500,300' rel='stylesheet' type='text/css'>
+  <title>IEEE NU</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Author" content="IEEE NU">
 
-  <body ng-controller="HomeCtrl">
-    <div id="menu">
-      <button ng-click="toggleMenu()" class="c-hamburger c-hamburger--htx">
-        <span>toggle menu</span>
-      </button>
-      <nav>
-        <ul ng-show="menuOpen" class="fade">
-          <li><a href="#about" du-smooth-scroll>About Us</a></li>
-          <li><a href="#what-we-do" du-smooth-scroll>What We Do</a></li>
-          <li><a href="#showcase" du-smooth-scroll>Project Showcase</a></li>
-          <li><a href="#members" du-smooth-scroll>Executive Board</a></li>
-        </ul>
-      </nav>
+  <!--build:css styles.css-->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
+  <!-- /build -->
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body ng-controller="HomeCtrl">
+  <div id="menu">
+    <button ng-click="toggleMenu()" class="c-hamburger c-hamburger--htx">
+      <span>toggle menu</span>
+    </button>
+    <nav>
+      <ul ng-show="menuOpen" class="fade">
+        <li>
+          <a href="#about" du-smooth-scroll>About Us</a>
+        </li>
+        <li>
+          <a href="#what-we-do" du-smooth-scroll>What We Do</a>
+        </li>
+        <li>
+          <a href="#showcase" du-smooth-scroll>Project Showcase</a>
+        </li>
+        <li>
+          <a href="#members" du-smooth-scroll>Executive Board</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="jumbotron">
+    <div id="header" class="fixed">
+      <h1>IEEE</h1>
+      <h2>Northwestern University</h2>
     </div>
+  </div>
 
-    <div class="jumbotron">
-      <div id="header" class="fixed">
-        <h1>IEEE</h1>
-        <h2>Northwestern University</h2>
-      </div>
+  <section id="about">
+    <div class="container">
+      <h3>About Us</h3>
+      <p>
+        The Northwestern University Student Chapter of the Institute of Electrical and Electronics Engineers (IEEE NU) is an organization
+        dedicated to providing the resources and outlets through which the University's aspiring engineers, tinkerers, and
+        hackers can learn and create with their craft.
+      </p>
+      <p>
+        Our chapter is directly supported and funded by Northwestern University's
+        <a class="link" target="_blank" href="http://www.mccormick.northwestern.edu/eecs/">Electrical Engineering and Computer Science</a> (EECS) department.
+      </p>
     </div>
+  </section>
 
-    <section id="about">
-      <div class="container">
-        <h3>About Us</h3>
-          <p>
-            The Northwestern University Student Chapter of the Institute of Electrical and Electronics Engineers (IEEE NU) is an organization dedicated to providing the resources and outlets through which the University's aspiring engineers, tinkerers, and hackers can learn and create with their craft.
-          </p>
-          <p>
-            Our chapter is directly supported and funded by Northwestern University's <a class="link" target="_blank" href="http://www.mccormick.northwestern.edu/eecs/">Electrical Engineering and Computer Science</a> (EECS) department.
-          </p>
-      </div>
-    </section>
-
-    <section id="what-we-do">
-      <div class="container">
-        <h3>What We Do</h3>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="wwd-container">
-              <a href="educate.html"> 
-                <div class="wwd-box">
-                  <img src="assets/wwd/educate.jpg" class="img-responsive" alt=""/>
-                  <h1 class="bigtext">Educate</h1>
-                </div>
-                <p class="smalltext">Host workshops and tech talks.</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wwd-container"> 
-              <a href="explore.html"> 
-                <div class="wwd-box">
-                 <img src="assets/wwd/explore.jpg" class="img-responsive" /> 
-                  <h1 class="bigtext"> Explore </h1> 
-                </div>
-                  <p class="smalltext">Provide mentorship and hands-on technical training.</p> 
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="wwd-container">
-              <a href="enjoy.html">
-                <div class="wwd-box">
-                  <img src="assets/wwd/enjoy.jpg" class="img-responsive" />
-                  <h1 class="bigtext">Enjoy</h1>
-                </div>
-                <p class="smalltext">Organize barbeques and other fun activites.</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="showcase" >
-      <div class="container">
-        <h3>Project Showcase</h3>
-          <p>The annual IEEE NU Project Showcase is an opportunity for Northwestern students, both undergraduate and graduate, to present independent software and hardware projects to employers and the Northwestern community. Submissions can consist of any unique, portable, and easily demonstrable original creation.</p>
-
-          <p>Applications for the 2018 Showcase are now open. <a href="https://goo.gl/forms/uSuPDcCUzYk8tGtw1">Apply now</a>!</p>
-          <p>This year's showcase will take place on Saturday, March 3rd, in the Norris Louis Room.</p>
-
-          <p>A panel of industry representatives evaluates each project on three main criteria: <br> </p>
-          <p style="font-size: 14px;">
-          <b> 1. </b> Real-World Practicality and Potential Application <br>
-          <b> 2. </b> Technical Difficulty <br>
-          <b> 3. </b> Effectiveness of Project's Execution </p>
-          
-          <p>The inaugural 2017 IEEE NU Project Showcase featured over 20 projects and 50 students, as well as 10 judges from top tech companies. Below are the winning submissions and their descriptions.</p>
-
-          <br>
-          <h4>1st</h4>
-            <img src="assets/showcase-winners/Serif.JPG">
-            <h5> <a href="https://serif.nu"> Serif.nu </a> </h5>
-             <p>Simple, fast, and visual course scheduling for Northwestern University</p>
-          <br>
-          <br>
-          <h4>2nd (Tie)</h4>
-            <img src="assets/showcase-winners/Slag.JPG">
-            <h5> <a href="https://www.npmjs.com/package/slag-cli"> Slag </a> </h5>
-             <p>Slack in your terminal</p>
-          <br>
-          <br>
-          <h4>2nd (Tie)</h4>
-            <img src="assets/showcase-winners/Namehelp.JPG">
-            <h5> <a href="http://aqualab.cs.northwestern.edu/projects/namehelp"> Namehelp </a> </h5>
-              <p>Local DNS resolver that improves CDN replica selection, specializing in public DNS users </p>
-          <br>
-          <br>
-          <h4>Best Underclassmen Project</h4>
-            <img src="assets/showcase-winners/pyed_pyper.JPG">
-            <h5 style="font-size: 16.5px;">Pyed Pyper</h5>
-              <p>Data visualization tool for Chicago public school safety</p>
-
-      </div>
-    </section>
-
-    <section id="members">
-      <div class="container">
-        <h3>Executive Board</h3>
-        <div class="row">
-          <div ng-repeat="member in exec">
-              <div class="clearfix" ng-if="$index % 4 == 0"></div>
-              <div id="member" class="col-md-3">
-                  <img ng-src="{{member.img}}" alt="headshot.jpg">
-                  <h4>{{member.name}}</h4>
-                  <p>{{member.position}}</p>
+  <section id="what-we-do">
+    <div class="container">
+      <h3>What We Do</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="wwd-container">
+            <a href="educate.html">
+              <div class="wwd-box">
+                <img src="assets/wwd/educate.jpg" class="img-responsive" alt="" />
+                <h1 class="bigtext">Educate</h1>
               </div>
+              <p class="smalltext">Host workshops and tech talks.</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wwd-container">
+            <a href="explore.html">
+              <div class="wwd-box">
+                <img src="assets/wwd/explore.jpg" class="img-responsive" />
+                <h1 class="bigtext"> Explore </h1>
+              </div>
+              <p class="smalltext">Provide mentorship and hands-on technical training.</p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wwd-container">
+            <a href="enjoy.html">
+              <div class="wwd-box">
+                <img src="assets/wwd/enjoy.jpg" class="img-responsive" />
+                <h1 class="bigtext">Enjoy</h1>
+              </div>
+              <p class="smalltext">Organize barbeques and other fun activites.</p>
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <a href="http://facebook.com/groups/ieee.nu">
-        <span id="facebook"></span>
-      </a>
-      <a href="https://www.ieee.org/index.html">
-        <span id="ieee"></span>
-      </a>
-      <a href="mailto:ieee@u.northwestern.edu">
-        <span id="email"></span>
-      </a>
-    </footer>
+  <section id="showcase">
+    <div class="container">
+      <h3>Project Showcase</h3>
+      <p>The annual IEEE NU Project Showcase is an opportunity for Northwestern students, both undergraduate and graduate, to
+        present independent software and hardware projects to employers and the Northwestern community. Submissions can consist
+        of any unique, portable, and easily demonstrable original creation.</p>
 
-    <!--build:js scripts.js-->
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
-    <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
-    <!-- /build -->
-    <script src="js/hamburger.js"></script>
-  </body>
+      <p>A panel of industry representatives evaluates each project on three main criteria:
+        <br> </p>
+      <p style="font-size: 14px;">
+        <b> 1. </b> Real-World Practicality and Potential Application
+        <br>
+        <b> 2. </b> Technical Difficulty
+        <br>
+        <b> 3. </b> Effectiveness of Project's Execution </p>
+
+      <p>The 2018 IEEE NU Project Showcase featured over 20 projects and 50 students, as well as 10 judges from top tech companies.
+        Below are the winning submissions and their descriptions.</p>
+
+      <br>
+      <h4>1st</h4>
+      <img src="assets/showcase-winners/open.jpg">
+      <h5 style="font-size: 16.5px;">
+        Open
+      </h5>
+      <p>Tool for real-time sentiment analysis of tweets</p>
+      <br>
+      <br>
+      <h4>2nd</h4>
+      <img src="assets/showcase-winners/alexa_magic_mirror.jpg">
+      <h5 style="font-size: 16.5px;">
+        Alexa Magic Mirror
+      </h5>
+      <p>Amazon Alexa-infused mirror with a GUI overlay</p>
+      <br>
+      <br>
+      <h4>Best Underclassmen Project</h4>
+      <img src="assets/showcase-winners/cadenza.jpg">
+      <h5>
+        <a target="_blank" href="http://cadenzaapp.me/">CADENZA</a>
+      </h5>
+      <p>Tool to help Spotify users record thoughts associated with their music</p>
+
+    </div>
+  </section>
+
+  <section id="members">
+    <div class="container">
+      <h3>Executive Board</h3>
+      <div class="row">
+        <div ng-repeat="member in exec">
+          <div class="clearfix" ng-if="$index % 4 == 0"></div>
+          <div id="member" class="col-md-3">
+            <img ng-src="{{member.img}}" alt="headshot.jpg">
+            <h4>{{member.name}}</h4>
+            <p>{{member.position}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="http://facebook.com/groups/ieee.nu">
+      <span id="facebook"></span>
+    </a>
+    <a href="https://www.ieee.org/index.html">
+      <span id="ieee"></span>
+    </a>
+    <a href="mailto:ieee@u.northwestern.edu">
+      <span id="email"></span>
+    </a>
+  </footer>
+
+  <!--build:js scripts.js-->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- /build -->
+  <script src="js/hamburger.js"></script>
+</body>
+
 </html>

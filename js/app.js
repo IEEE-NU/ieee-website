@@ -188,7 +188,7 @@ ieeeApp.controller('HomeCtrl', ['$scope', '$http', function($scope, $http) {
 		{
 			name: 'Larry Zhao',
 			position: 'Game Development',
-			img: 'assets/headshots/Larry.JPG'
+			img: 'assets/headshots/Larry.jpg'
 		},
 
 	];
